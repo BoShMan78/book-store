@@ -1,5 +1,6 @@
 package mate.academy.bookstore;
 
+import java.math.BigDecimal;
 import mate.academy.bookstore.model.Book;
 import mate.academy.bookstore.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +8,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import java.math.BigDecimal;
 
 @SpringBootApplication
 public class BookStoreApplication {
@@ -27,7 +26,8 @@ public class BookStoreApplication {
             bookAlice.setTitle("Alice in Wonderland");
             bookAlice.setDescription("""
                     The famous Alice from Wonderland" is a little girl,
-                    about seven years old, with straight bangs and hair that always climbs into her eyes.
+                    about seven years old, with straight bangs and hair 
+                    that always climbs into her eyes.
                     """);
             bookAlice.setPrice(BigDecimal.valueOf(10));
             bookAlice.setIsbn("978-1-2345-678-9-0");
@@ -36,8 +36,8 @@ public class BookStoreApplication {
             bookJava.setAuthor("Allen B. Downey, Chris Mayfield");
             bookJava.setTitle("Think Java: How to Think Like a Computer Scientist");
             bookJava.setDescription("""
-                    Think Java is a hands-on introduction to computer science and programming used by many
-                    universities and high schools around the world.
+                    Think Java is a hands-on introduction to computer science and 
+                    programming used by many universities and high schools around the world.
                     """);
             bookJava.setPrice(BigDecimal.valueOf(20));
             bookJava.setIsbn("978-123-4567-89-0");
